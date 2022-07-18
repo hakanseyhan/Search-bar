@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Coding by Hakan SEYHAN | www.seyhanblog.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Animated Search Bar </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Unicons CSS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+                        
+    </head>
+    <body>
+        <div class="input-box">
+            <input type="text" placeholder="Search...">
+            <span class="icon">
+                <i class="uil uil-search search-icon"></i>
+            </span>
+            <i class="uil uil-times close-icon"></i>
+        </div>
+
+        <script>
+            let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+        </script>
+        
+    </body>
+</html>
